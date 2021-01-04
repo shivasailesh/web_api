@@ -1,0 +1,7 @@
+C:\Users\shiva\OneDrive\Desktop\webapi\sample1\sample1\bin\Debug\sample1.exe.config
+C:\Users\shiva\OneDrive\Desktop\webapi\sample1\sample1\bin\Debug\sample1.exe
+C:\Users\shiva\OneDrive\Desktop\webapi\sample1\sample1\bin\Debug\sample1.pdb
+C:\Users\shiva\OneDrive\Desktop\webapi\sample1\sample1\obj\Debug\sample1.csprojAssemblyReference.cache
+C:\Users\shiva\OneDrive\Desktop\webapi\sample1\sample1\obj\Debug\sample1.csproj.CoreCompileInputs.cache
+C:\Users\shiva\OneDrive\Desktop\webapi\sample1\sample1\obj\Debug\sample1.exe
+C:\Users\shiva\OneDrive\Desktop\webapi\sample1\sample1\obj\Debug\sample1.pdb

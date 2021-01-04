@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using sampleapi.datacontext;
+using sampleapi.model;
+using sampleapi.ViewModel;
+
+namespace sampleapi.Controllers
+{
+    [Route("[controller]")]
+    [ApiController]
+    public class UserController : ControllerBase
+    {
+        readonly Userdbcontext dbcontext;
+        public UserController(Userdbcontext userdbcontext)
+        {
+            dbcontext = userdbcontext;
+        }
+        public ActionResult<IEnumerable<User>> Get()
+        {
+            List<User> result = (from us in dbcontext.user
+                                 select new User()
+                                 {
+                                     contact = us.contact,
+                                     username = us.username,
+                                     email = us.email,
+                                     address = us.address,
+                                     user_id=us.user_id,
+                                     fullname=us.fullname
+                                     
+
+                                 }).ToList();
+            return result;
+        }
+    }
+}
